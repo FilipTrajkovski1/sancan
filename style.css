@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Delius&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+/* BASE START */
+
+body:before {
+    min-height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(slike/net-pic-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    /* blur start */
+    filter: blur(12px);
+    z-index: -1;
+    content: '';
+    position: absolute;
+    /* blur end */
+    overflow: auto;
+}
+
+header {
+    max-width: 100%;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(130deg, rgb(205, 66, 255) 85%, white 85%, white 88%, rgb(205, 66, 255) 88%, rgb(205, 66, 255) 91%, white 91%, white 94%, rgb(205, 66, 255) 94%, rgb(205, 66, 255) 97%, white 97%);
+}
+
+nav {
+    width: 65%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.links a {
+    text-decoration: none;
+    font-size: 17pt;
+    height: 100%;
+    padding: 0em 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+    transition: color 0.5s, background-color 0.7s;
+    color: white;
+}
+
+.links a:hover {
+    color: rgb(205, 66, 255);
+    background-color: rgb(255, 255, 255, 0.8);
+}
+
+/* BASE END */
+
+/* HOME START */
+
+#home-first {
+    height: 85vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+    background-color: rgb(0, 0, 0, 0.7);
+    background-blend-mode: multiply;
+}
+
+#home-first main {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    gap: 3em;
+}
+
+#home-first main h1 {
+    font-size: 40pt;
+    text-align: center;
+}
+
+#home-first main b {
+    width: 50%;
+    text-align: center;
+    font-size: 20pt;
+    font-family: "Delius", cursive;
+}
+
+#home-first main a {
+    text-decoration: none;
+}
+
+#home-first main button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5em;
+    border: 3px solid rgb(205, 66, 255);
+    background-color: rgb(0, 0, 0, 0);
+    padding: 0.7em;
+    color: white;
+    font-size: 20pt;
+    border-radius: 25px;
+    transition: all 0.5s;
+    animation: bounce2 2s ease infinite;
+}
+
+#home-first main button:hover {
+    animation: none;
+    background-color: rgb(205, 66, 255);
+    border: 3px solid white;
+}
+
+@keyframes bounce2 {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-30px);
+    }
+
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
+#home-second {
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+    background-image: url(slike/net-pic-background3.jpg);
+}
+
+#home-second div{
+    height: 80vh;
+    width: 100%;
+    background-color: rgb(0, 0, 0, 0.7);
+    background-blend-mode: multiply;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+#home-second main{
+    width: 50%;
+    color: white;
+    font-size: 15pt;
+    text-align: center;
+    margin-left: 10rem;
+    line-height: 1.5;
+}
+
+.between{
+    height: 10vh;
+    width: 100%;
+    background-image: url(slike/between.webp);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.between div{
+    height: 10vh;
+    width: 100%;
+    background-color: rgb(0, 0, 0, 0.5);
+}
+
+#home-third{
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+    background-image: url(slike/net-pic-background2.jpg);
+}
+
+#home-third div{
+    height: 80vh;
+    width: 100%;
+    background-color: rgb(0, 0, 0, 0.7);
+    background-blend-mode: multiply;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+#home-third main{
+    width: 50%;
+    color: white;
+    font-size: 15pt;
+    text-align: center;
+    margin-left: 10rem;
+    line-height: 1.5;
+}
+
+#home-fourth{
+    height: 120vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+    line-height: 1.5;
+    font-family: "Montserrat", sans-serif;
+    background-image: linear-gradient(to bottom, rgb(65, 0, 89), rgb(121, 0, 165), rgb(142, 0, 194));
+    color: white;
+}
+
+#home-fourth .first,.second,.third{
+    width: 70%;
+}
+
+#home-fourth .first p,strong{
+    font-size: 17pt;
+    text-align: center;
+}
+
+#home-fourth .second p{
+    font-size: 17pt;
+    text-align: center;
+}
+
+#home-fourth .second{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2em;
+}
+
+#home-fourth .second .second-hs{
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+}
+
+#home-fourth .third p{
+    font-size: 17pt;
+    text-align: center;
+}
+
+#home-fourth .third{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+
+/* HOME END */
