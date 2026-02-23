@@ -9,32 +9,25 @@
 
 /* BASE START */
 
-body:before {
-    min-height: 100%;
+body {
+    min-height: 100vh;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-image: url(slike/net-pic-background.jpg);
-    background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    /* blur start */
-    filter: blur(12px);
-    z-index: -1;
-    content: '';
-    position: absolute;
-    /* blur end */
-    overflow: auto;
 }
 
 header {
-    max-width: 100%;
+    width: 100%;
     height: 15vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(130deg, rgb(205, 66, 255) 85%, white 85%, white 88%, rgb(205, 66, 255) 88%, rgb(205, 66, 255) 91%, white 91%, white 94%, rgb(205, 66, 255) 94%, rgb(205, 66, 255) 97%, white 97%);
+    background-image: linear-gradient(130deg, rgb(94, 40, 114) 85%, white 85%, white 88%, rgb(94, 40, 114) 88%, rgb(94, 40, 114) 91%, white 91%, white 94%, rgb(94, 40, 114) 94%, rgb(94, 40, 114) 97%, white 97%);
+    box-shadow: 0px 8px 25px black;
 }
 
 nav {
@@ -66,8 +59,53 @@ nav {
 }
 
 .links a:hover {
-    color: rgb(205, 66, 255);
+    color: rgb(94, 40, 114);
     background-color: rgb(255, 255, 255, 0.8);
+}
+
+.site-footer {
+  width: 100%;
+  background-color: rgb(94, 40, 114);
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.footer-column {
+  flex: 1;
+  text-align: center;
+}
+
+.footer-column h4 {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.site-footer a {
+  color: rgb(214, 101, 255);
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.site-footer a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgb(185, 185, 185);
+  text-align: center;
+  padding: 15px;
+  font-size: 13px;
+  color: #cbd5e1;
 }
 
 /* BASE END */
@@ -115,7 +153,7 @@ nav {
     flex-direction: column;
     align-items: center;
     gap: 0.5em;
-    border: 3px solid rgb(205, 66, 255);
+    border: 3px solid rgb(145, 43, 181);
     background-color: rgb(0, 0, 0, 0);
     padding: 0.7em;
     color: white;
@@ -127,7 +165,7 @@ nav {
 
 #home-first main button:hover {
     animation: none;
-    background-color: rgb(205, 66, 255);
+    background-color: rgb(145, 43, 181);
     border: 3px solid white;
 }
 
@@ -158,9 +196,10 @@ nav {
     align-items: center;
     font-family: "Montserrat", sans-serif;
     background-image: url(slike/net-pic-background3.jpg);
+    box-shadow: 0px 10px 18px black;
 }
 
-#home-second div{
+#home-second div {
     height: 80vh;
     width: 100%;
     background-color: rgb(0, 0, 0, 0.7);
@@ -170,7 +209,7 @@ nav {
     align-items: center;
 }
 
-#home-second main{
+#home-second main {
     width: 50%;
     color: white;
     font-size: 15pt;
@@ -179,21 +218,18 @@ nav {
     line-height: 1.5;
 }
 
-.between{
+.between {
     height: 10vh;
     width: 100%;
-    background-image: url(slike/between.webp);
-    background-attachment: fixed;
-    background-size: cover;
 }
 
-.between div{
+.between div {
     height: 10vh;
     width: 100%;
     background-color: rgb(0, 0, 0, 0.5);
 }
 
-#home-third{
+#home-third {
     height: 80vh;
     width: 100%;
     display: flex;
@@ -201,9 +237,10 @@ nav {
     align-items: center;
     font-family: "Montserrat", sans-serif;
     background-image: url(slike/net-pic-background2.jpg);
+    box-shadow: 0px 10px 18px black;
 }
 
-#home-third div{
+#home-third div {
     height: 80vh;
     width: 100%;
     background-color: rgb(0, 0, 0, 0.7);
@@ -213,7 +250,7 @@ nav {
     align-items: center;
 }
 
-#home-third main{
+#home-third main {
     width: 50%;
     color: white;
     font-size: 15pt;
@@ -222,7 +259,7 @@ nav {
     line-height: 1.5;
 }
 
-#home-fourth{
+#home-fourth {
     height: 120vh;
     width: 100%;
     display: flex;
@@ -232,25 +269,27 @@ nav {
     gap: 10rem;
     line-height: 1.5;
     font-family: "Montserrat", sans-serif;
-    background-image: linear-gradient(to bottom, rgb(65, 0, 89), rgb(121, 0, 165), rgb(142, 0, 194));
-    color: white;
+    color: rgb(47, 0, 67);
 }
 
-#home-fourth .first,.second,.third{
+#home-fourth .first,
+.second,
+.third {
     width: 70%;
 }
 
-#home-fourth .first p,strong{
+#home-fourth .first p,
+strong {
     font-size: 17pt;
     text-align: center;
 }
 
-#home-fourth .second p{
+#home-fourth .second p {
     font-size: 17pt;
     text-align: center;
 }
 
-#home-fourth .second{
+#home-fourth .second {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -258,18 +297,18 @@ nav {
     gap: 2em;
 }
 
-#home-fourth .second .second-hs{
+#home-fourth .second .second-hs {
     display: flex;
     justify-content: center;
     gap: 2em;
 }
 
-#home-fourth .third p{
+#home-fourth .third p {
     font-size: 17pt;
     text-align: center;
 }
 
-#home-fourth .third{
+#home-fourth .third {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -278,3 +317,199 @@ nav {
 }
 
 /* HOME END */
+
+
+/* ABOUT ME */
+
+#about-first {
+    height: 85vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+    background-color: rgb(0, 0, 0, 0.7);
+    background-blend-mode: multiply;
+    color: white;
+}
+
+#about-first main {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3em;
+}
+
+#about-first main h2 {
+    font-size: 30pt;
+    text-align: center;
+    font-family: "Delius", cursive;
+}
+
+#about-first main p {
+    width: 90%;
+    text-align: center;
+    font-size: 17pt;
+    line-height: 1.6;
+}
+
+#about-second{
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5em;
+    font-family: "Montserrat", sans-serif;
+    line-height: 1.5;
+}
+
+#about-second .left{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2em;
+    text-align: center;
+    font-size: 16pt;
+    color: rgb(47, 0, 67);
+}
+
+#about-second .left h2{
+    font-family: "Delius", cursive;
+}
+
+#about-second .right{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1em;
+    font-size: 16pt;
+    color: rgb(47, 0, 67);
+}
+
+#about-third{
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: "Montserrat", sans-serif;
+    gap: 5em;
+}
+
+#about-third h2{
+    font-size: 25pt;
+    color: rgb(47, 0, 67);
+    font-family: "Delius", cursive;
+}
+
+#about-third div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15pt;
+    line-height: 1.5;
+    gap: 5em;
+}
+
+#about-third div p{
+    width: 40%;
+}
+
+#about-fourth{
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+    gap: 3em;
+    line-height: 1.5;
+}
+
+#about-fourth h2{
+    font-size: 25pt;
+    color: rgb(47, 0, 67);
+    font-family: "Delius", cursive;
+}
+
+#about-fourth .row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5em;
+}
+
+#about-fourth .row .left,.middle,.right{
+    width: 25%;
+    font-size: 15pt;
+    color: rgb(47, 0, 67);
+}
+
+#about-fifth{
+    height: 150vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+    line-height: 1.7;
+    gap: 4em;
+}
+
+#about-fifth h2{
+    font-size: 30pt;
+    color: rgb(47, 0, 67);
+    font-family: "Delius", cursive;
+}
+
+#about-fifth .coach{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+}
+
+#about-fifth .coach .small{
+    border-radius: 100px;
+    border: 20px solid rgb(47, 0, 67);
+    width: 10px;
+    height: 10px;
+}
+
+#about-fifth .coach .big{
+    background-image: url(slike/coach.jpg);
+    background-size: cover;
+    border-radius: 100px;
+    border: 5px solid rgb(47, 0, 67);
+    width: 200px;
+    height: 200px;
+}
+
+#about-fifth ul{
+    font-size: 16pt;
+    color: rgb(47, 0, 67);
+}
+
+#about-fifth .semi-final{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16pt;
+    color: rgb(47, 0, 67);
+    gap: 3em;
+}
+
+#about-fifth .final{
+    font-size: 17pt;
+    color: rgb(47, 0, 67);
+    text-align: center;
+
+}
+
