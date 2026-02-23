@@ -189,7 +189,7 @@ nav {
 }
 
 #home-second {
-    height: 80vh;
+    min-height: 80vh;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -230,7 +230,7 @@ nav {
 }
 
 #home-third {
-    height: 80vh;
+    min-height: 80vh;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -260,7 +260,7 @@ nav {
 }
 
 #home-fourth {
-    height: 120vh;
+    min-height: 120vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -322,7 +322,7 @@ strong {
 /* ABOUT ME */
 
 #about-first {
-    height: 85vh;
+    min-height: 85vh;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -355,7 +355,7 @@ strong {
 }
 
 #about-second{
-    height: 60vh;
+    min-height: 60vh;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -391,7 +391,7 @@ strong {
 }
 
 #about-third{
-    height: 60vh;
+    min-height: 60vh;
     width: 100%;
     display: flex;
     align-items: center;
@@ -421,7 +421,7 @@ strong {
 }
 
 #about-fourth{
-    height: 70vh;
+    min-height: 70vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -452,7 +452,7 @@ strong {
 }
 
 #about-fifth{
-    height: 150vh;
+    min-height: 150vh;
     width: 100%;
     display: flex;
     flex-direction: column;
