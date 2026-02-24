@@ -363,6 +363,14 @@ strong {
     gap: 2em;
 }
 
+#home-fourth .third a{
+    color: #dc12c4;
+}
+
+#home-fourth .third a:hover{
+    color: #ff52eb;
+}
+
 /* HOME END */
 /* ========================= */
 
