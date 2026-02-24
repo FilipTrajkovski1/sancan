@@ -7,6 +7,7 @@
     scroll-behavior: smooth;
 }
 
+/* ========================= */
 /* BASE START */
 
 body {
@@ -108,8 +109,54 @@ nav {
   color: #cbd5e1;
 }
 
-/* BASE END */
+.footer-cta-wrapper {
+  text-align: center;
+  padding-bottom: 20px;
+}
 
+.footer-cta {
+  display: inline-block;
+  padding: 12px 22px;
+  background-color: white;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.footer-cta:hover {
+  background-color: rgb(75, 37, 88);
+  transform: translateY(-2px);
+}
+
+#backToTop {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 55px;
+  height: 55px;
+  border: none;
+  border-radius: 50%;
+  background-color: rgb(255, 202, 250);
+  color: black;
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  z-index: 1000;
+}
+
+#backToTop:hover {
+  background-color: #d564c8;
+  transform: translateY(-3px);
+}
+
+/* BASE END */
+/* ========================= */
+
+/* ========================= */
 /* HOME START */
 
 #home-first {
@@ -317,12 +364,13 @@ strong {
 }
 
 /* HOME END */
+/* ========================= */
 
-
-/* ABOUT ME */
+/* ========================= */
+/* ABOUT ME START */
 
 #about-first {
-    min-height: 85vh;
+    min-height: 80vh;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -363,6 +411,7 @@ strong {
     gap: 5em;
     font-family: "Montserrat", sans-serif;
     line-height: 1.5;
+    border-bottom: 5px solid rgb(47, 0, 67);
 }
 
 #about-second .left{
@@ -399,6 +448,7 @@ strong {
     flex-direction: column;
     font-family: "Montserrat", sans-serif;
     gap: 5em;
+    border-bottom: 5px solid rgb(47, 0, 67);
 }
 
 #about-third h2{
@@ -430,6 +480,7 @@ strong {
     font-family: "Montserrat", sans-serif;
     gap: 3em;
     line-height: 1.5;
+    border-bottom: 5px solid rgb(47, 0, 67);
 }
 
 #about-fourth h2{
@@ -513,3 +564,153 @@ strong {
 
 }
 
+/* ABOUT ME END */
+/* ========================= */
+
+/* ========================= */
+/* SERVICES START */
+
+#services-first{
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 0, 0, 0.7);
+}
+
+#services-first p{
+    text-align: center;
+    line-height: 2;
+    font-size: 18pt;
+    font-family: "Montserrat", sans-serif;
+    width: 80%;
+    color: white;
+}
+
+#services-first p strong{
+    font-size: 20pt;
+}
+
+#services-second{
+    min-height: 120vh;
+    width: 100%;
+    color: rgb(47, 0, 67);
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#services-second h1{
+    font-size: 40pt;
+}
+
+#services-second .promise1{
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#services-second .promise2{
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#services-second .promise1 .promise1-child1{
+    text-align: center;
+    font-size: 20pt;
+    line-height: 2;
+    width: 40%;
+}
+
+#services-second .promise1 .promise1-child2{
+    font-size: 16pt;
+    line-height: 1.7;
+    width: 40%;
+}
+
+#services-second .promise2 .promise2-child1{
+    text-align: center;
+    font-size: 20pt;
+    line-height: 2;
+    width: 40%;
+}
+
+#services-second .promise2 .promise2-child2{
+    font-size: 16pt;
+    line-height: 1.7;
+    width: 40%;
+}
+
+#services-third{
+    min-height: 150vh;
+    width: 70%;
+    border: 4px solid rgb(47, 0, 67);
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-family: "Montserrat", sans-serif;
+}
+
+#services-third .frst-child{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3em;
+}
+
+#services-third .frst-child h1{
+    font-size: 35pt;
+}
+
+#services-third .frst-child strong{
+    font-size: 20pt;
+}
+
+#services-third .frst-child b{
+    font-size: 15pt;
+}
+
+#services-third .scnd-child{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+}
+
+#services-third .scnd-child h2{
+    font-size: 25pt;
+}
+
+#services-third .scnd-child strong{
+    font-size: 20pt;
+}
+
+#services-third .scnd-child p{
+    width: 60%;
+    font-size: 15pt;
+    text-align: justify;
+    line-height: 1.8;
+}
+
+#services-third .thrd-child{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+}
+
+#services-third .thrd-child h2{
+    font-size: 25pt;
+}
+
+#services-third .thrd-child b{
+    font-size: 20pt;
+}
