@@ -603,7 +603,7 @@ strong {
 }
 
 #services-second {
-    min-height: 120vh;
+    min-height: 100vh;
     width: 100%;
     color: rgb(47, 0, 67);
     font-family: "Montserrat", sans-serif;
@@ -611,6 +611,7 @@ strong {
     flex-direction: column;
     justify-content: center;
     gap: 5em;
+    padding: 2em 0em;
     align-items: center;
     border-top: 5px solid rgb(47, 0, 67);
 }
@@ -660,7 +661,7 @@ strong {
 }
 
 #services-third {
-    min-height: 150vh;
+    min-height: 175vh;
     width: 70%;
     border: 4px solid rgb(47, 0, 67);
     margin: 1rem;
@@ -838,10 +839,22 @@ nav {
     transition: 0.3s ease;
 }
 
+#down{
+    display: none;
+}
+
 /* ========================= */
 /* RESPONSIVE - MOBILE */
 
 @media (max-width: 768px) {
+
+    #down{
+        display: block;
+    }
+
+    #right{
+        display: none;
+    }
 
     body {
         font-size: 13px;
