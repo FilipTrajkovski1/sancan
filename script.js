@@ -25,3 +25,20 @@ document.addEventListener("DOMContentLoaded", function () {
         navLinks.classList.toggle("active");
     });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const reviews = document.querySelectorAll(".review-box");
+
+    // Ako sekcija ne postoji, prekini
+    if (reviews.length === 0) return;
+
+    let reviewIndex = 0;
+
+    setInterval(() => {
+        reviews[reviewIndex].classList.remove("active");
+        reviewIndex = (reviewIndex + 1) % reviews.length;
+        reviews[reviewIndex].classList.add("active");
+    }, 15000);
+
+});

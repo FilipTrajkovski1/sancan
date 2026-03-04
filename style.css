@@ -130,6 +130,62 @@ nav {
     transform: translateY(-2px);
 }
 
+/* ========================= */
+/* REVIEWS SECTION */
+/* ========================= */
+
+#home-reviews {
+    padding: 5em 0;
+    background-color: rgb(47, 0, 67);
+    text-align: center;
+    color: white;
+}
+
+#home-reviews h2 {
+    margin-bottom: 2em;
+}
+
+.review-box {
+    max-width: 600px;
+    margin: 0 auto;
+    display: none;
+    flex-direction: column;
+    gap: 1em;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    padding: 0 1em;
+}
+
+.review-box.active {
+    display: flex;
+}
+
+.stars {
+    font-size: 1.3rem;
+    letter-spacing: 4px;
+}
+
+.review-box span {
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+.google-btn {
+    display: inline-block;
+    margin-top: 3em;
+    padding: 0.7em 1.2em;
+    border: 2px solid white;
+    text-decoration: none;
+    color: white;
+    transition: 0.3s ease;
+    font-size: 0.9rem;
+}
+
+.google-btn:hover {
+    background-color: white;
+    color: rgb(47, 0, 67);
+}
+
 #backToTop {
     position: fixed;
     bottom: 30px;
@@ -317,6 +373,7 @@ nav {
     line-height: 1.5;
     font-family: "Montserrat", sans-serif;
     color: rgb(47, 0, 67);
+    padding: 4em 0em;
 }
 
 #home-fourth .first,
@@ -369,6 +426,45 @@ strong {
 
 #home-fourth .third a:hover {
     color: #ff52eb;
+}
+
+#home-fourth .special {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5em;
+}
+
+#home-fourth .special .child1 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#home-fourth .special .child1 h3 {
+    font-size: 23pt;
+}
+
+#home-fourth .special .child1 b {
+    font-size: 17pt;
+}
+
+#home-fourth .special .child2 {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#home-fourth .special .child2 h3 {
+    font-size: 23pt;
+}
+
+#home-fourth .special .child2 b {
+    font-size: 17pt;
 }
 
 /* HOME END */
@@ -839,7 +935,7 @@ nav {
     transition: 0.3s ease;
 }
 
-#down{
+#down {
     display: none;
 }
 
@@ -848,11 +944,11 @@ nav {
 
 @media (max-width: 768px) {
 
-    #down{
+    #down {
         display: block;
     }
 
-    #right{
+    #right {
         display: none;
     }
 
@@ -945,7 +1041,7 @@ nav {
         font-size: 0.9rem !important;
     }
 
-    #home-first main button strong{
+    #home-first main button strong {
         font-size: 1rem;
     }
 
@@ -973,6 +1069,20 @@ nav {
     #home-fourth .second .second-hs {
         flex-direction: column;
         gap: 0.8em;
+    }
+
+    #home-fourth .special .child1 {
+        flex-direction: column;
+        gap: 3em;
+    }
+
+    #home-fourth .special{
+        text-align: center;
+    }
+
+    #home-fourth .special .child2 {
+        flex-direction: column;
+        gap: 2em;
     }
 
     #about-second,
